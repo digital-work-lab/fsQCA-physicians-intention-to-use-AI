@@ -1,0 +1,142 @@
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/fsQCA_data_t1.csv
+Model: useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- COMPLEX SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.84292
+                                                   raw       unique              
+                                                 coverage    coverage   consistency 
+                                                ----------  ----------  ----------  
+~experAIc*imporAIc*roleAIc*~aclevelc            0.200631    0.088771    0.868944    
+familAIc*~experAIc*imporAIc*roleAIc             0.304889    0.0922127   0.930416    
+familAIc*imporAIc*roleAIc*gender                0.283808    0.0434533   0.897913    
+imporAIc*roleAIc*aclevelc*gender                0.265595    0.025527    0.84412     
+familAIc*~experAIc*roleAIc*~aclevelc*gender     0.090205    0.0282518   0.933235    
+~familAIc*~experAIc*roleAIc*aclevelc*gender     0.168507    0.0671159   0.924469    
+solution coverage: 0.69726
+solution consistency: 0.874775
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/AI_medstud138_QCA_gw.csv
+Model: useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- PARSIMONIOUS SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.84292
+                          raw       unique              
+                        coverage    coverage   consistency 
+                       ----------  ----------  ----------  
+familAIc*roleAIc       0.546679    0.0463215   0.898209    
+roleAIc*aclevelc       0.485443    0.169941    0.884967    
+imporAIc*~aclevelc     0.335866    0.151011    0.682799    
+solution coverage: 0.867631
+solution consistency: 0.791159
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/AI_medstud138_QCA_gw.csv
+Model: useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- INTERMEDIATE SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.84292
+Assumptions:
+familAIc (present)
+experAIc (present)
+imporAIc (present)
+roleAIc (present)
+                                  raw       unique              
+                                coverage    coverage   consistency 
+                               ----------  ----------  ----------  
+imporAIc*roleAIc*~aclevelc     0.297433    0.112577    0.872896    
+familAIc*imporAIc*roleAIc      0.467517    0.104259    0.9043      
+familAIc*roleAIc*gender        0.341029    0.0282518   0.891973    
+roleAIc*aclevelc*gender        0.356661    0.14929     0.861448    
+solution coverage: 0.786604
+solution consistency: 0.875638
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/AI_medstud138_QCA_gw.csv
+Model: ~useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- COMPLEX SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.804391
+                                                           raw       unique              
+                                                         coverage    coverage   consistency 
+                                                        ----------  ----------  ----------  
+~experAIc*~imporAIc*~roleAIc*aclevelc                   0.283873    0.103413    0.892265    
+~experAIc*~imporAIc*~roleAIc*gender                     0.35301     0.17255     0.86504     
+~familAIc*~experAIc*~roleAIc*aclevelc*gender            0.204189    0.049363    0.912901    
+familAIc*experAIc*imporAIc*~roleAIc*aclevelc*gender     0.0833456   0.0637177   0.847988    
+solution coverage: 0.573605
+solution consistency: 0.881585
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/AI_medstud138_QCA_gw.csv
+Model: ~useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- PARSIMONIOUS SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.804391
+                          raw       unique              
+                        coverage    coverage   consistency 
+                       ----------  ----------  ----------  
+~imporAIc*~roleAIc     0.56672     0.14384     0.89168     
+~familAIc*~roleAIc     0.515014    0.097847    0.89671     
+experAIc*~roleAIc      0.225282    0.0900833   0.84228     
+solution coverage: 0.789805
+solution consistency: 0.881334
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  ./data/AI_medstud138_QCA_gw.csv
+Model: ~useAIc = f(familAIc, experAIc, imporAIc, roleAIc, aclevelc, gender)
+Algorithm: Quine-McCluskey
+
+--- INTERMEDIATE SOLUTION ---
+frequency cutoff: 3
+consistency cutoff: 0.804391
+Assumptions:
+~familAIc (absent)
+~experAIc (absent)
+~imporAIc (absent)
+~roleAIc (absent)
+                                             raw       unique              
+                                           coverage    coverage   consistency 
+                                          ----------  ----------  ----------  
+~experAIc*~imporAIc*~roleAIc*aclevelc     0.283873    0.103413    0.892265    
+~experAIc*~imporAIc*~roleAIc*gender       0.35301     0.17255     0.86504     
+~familAIc*~roleAIc*aclevelc*gender        0.221766    0.049363    0.915357    
+experAIc*~roleAIc*aclevelc*gender         0.10605     0.0672331   0.866029    
+solution coverage: 0.594698
+solution consistency: 0.884146
+
+
